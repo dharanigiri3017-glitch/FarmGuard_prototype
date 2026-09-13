@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - AgroGuard AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard">
+
+<aside>
+    <div class="side-logo">🌱 AgroGuard <b>AI</b></div>
+
+    <a class="active" href="dashboard.html">🏠 Dashboard</a>
+    <a href="scanner.html">📷 AI Scanner</a>
+    <a href="#">🌾 My Crops</a>
+    <a href="history.html">📜 Scan History</a>
+    <a href="#">🌦️ Weather & Risk</a>
+    <a href="alerts.html">🚨 Alerts</a>
+    <a href="recommendations.html">💡 Recommendations</a>
+    <a href="#">🧑‍🔬 Expert</a>
+    <a href="#">🗺️ Outbreak Map</a>
+    <a href="#">📊 Analytics</a>
+
+    <div class="side-bottom">
+        <a href="#">⚙️ Settings</a>
+        <a href="index.html">🚪 Logout</a>
+    </div>
+</aside>
+
+<main class="main">
+
+    <header>
+        <div>
+            <h1>Good Morning, Farmer 👨‍🌾</h1>
+            <p>Here's your crop health overview.</p>
+        </div>
+
+        <div class="profile">👨‍🌾</div>
+    </header>
+
+    <div class="stats-grid">
+        <div class="stat">
+            <span>🌱</span>
+            <h3>82%</h3>
+            <p>Crop Health</p>
+        </div>
+
+        <div class="stat">
+            <span>🩺</span>
+            <h3>24%</h3>
+            <p>Disease Risk</p>
+        </div>
+
+        <div class="stat">
+            <span>🔍</span>
+            <h3>18</h3>
+            <p>Total Scans</p>
+        </div>
+
+        <div class="stat">
+            <span>🚨</span>
+            <h3>3</h3>
+            <p>Active Alerts</p>
+        </div>
+    </div>
+
+    <div class="dashboard-grid">
+
+        <div class="panel">
+            <div class="panel-title">
+                <h2>My Crops</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="crop">
+                <span>🍅</span>
+                <div>
+                    <b>Tomato</b>
+                    <small>2 Acres</small>
+                </div>
+                <strong class="healthy">Healthy</strong>
+            </div>
+
+            <div class="crop">
+                <span>🌾</span>
+                <div>
+                    <b>Rice</b>
+                    <small>3 Acres</small>
+                </div>
+                <strong class="warning">Moderate</strong>
+            </div>
+
+            <div class="crop">
+                <span>🌶️</span>
+                <div>
+                    <b>Chilli</b>
+                    <small>1 Acre</small>
+                </div>
+                <strong class="danger">Attention</strong>
+            </div>
+        </div>
+
+        <div class="panel scan-panel">
+            <div class="big-icon">📷</div>
+            <h2>Scan Your Crop</h2>
+            <p>Upload a leaf image and let AI identify possible problems.</p>
+            <a href="scanner.html" class="primary-btn">Start AI Scan</a>
+        </div>
+
+    </div>
+
+    <div class="panel alert-panel">
+        <h2>🚨 Recent Alerts</h2>
+
+        <div class="alert-item danger-bg">
+            <b>Possible fungal disease risk</b>
+            <span>Tomato crop</span>
+        </div>
+
+        <div class="alert-item warning-bg">
+            <b>High humidity detected</b>
+            <span>Monitor your crops</span>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>

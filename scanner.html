@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Scanner - AgroGuard AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard">
+
+<aside>
+    <div class="side-logo">🌱 AgroGuard <b>AI</b></div>
+    <a href="dashboard.html">🏠 Dashboard</a>
+    <a class="active" href="scanner.html">📷 AI Scanner</a>
+    <a href="history.html">📜 Scan History</a>
+    <a href="alerts.html">🚨 Alerts</a>
+    <a href="recommendations.html">💡 Recommendations</a>
+</aside>
+
+<main class="main">
+
+<header>
+    <div>
+        <h1>AI Crop Scanner 📷</h1>
+        <p>Upload a clear image of your crop leaf.</p>
+    </div>
+</header>
+
+<div class="scanner-box">
+
+    <div class="upload-area" id="uploadArea">
+        <div class="upload-icon">🌿</div>
+        <h2>Upload Crop Image</h2>
+        <p>Choose a leaf image from your computer</p>
+
+        <input type="file" id="imageInput" accept="image/*" hidden>
+
+        <button class="primary-btn"
+                onclick="document.getElementById('imageInput').click()">
+            📷 Choose Image
+        </button>
+
+        <div id="preview"></div>
+    </div>
+
+    <label>Select Crop</label>
+
+    <select id="cropSelect">
+        <option>Tomato</option>
+        <option>Rice</option>
+        <option>Chilli</option>
+        <option>Potato</option>
+    </select>
+
+    <button class="primary-btn analyze" onclick="analyzeCrop()">
+        🤖 Analyze With AI
+    </button>
+
+</div>
+
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
